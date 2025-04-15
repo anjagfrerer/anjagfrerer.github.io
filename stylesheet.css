@@ -67,6 +67,7 @@ body {
     /* 2 gleich breite Spalten */
     grid-template-rows: 1fr;
     align-items: start;
+    font-size: 20px;
   }
   .header_links {
     display: grid;
@@ -132,7 +133,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 3vw;
-  font-size: 48px;
+  font-size: min(48px, 8vw);
 }
 
 .linie {
@@ -180,6 +181,7 @@ body {
   text-align: left;
   color: white;
   word-wrap: break-word;
+  font-size: min(48px, 8vw);
 }
 
 .overlay-text-zweites {
@@ -190,6 +192,7 @@ body {
   text-align: right;
   color: white;
   word-wrap: break-word;
+  font-size: min(48px, 8vw);
 }
 
 .no_background {
