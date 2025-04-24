@@ -46,7 +46,7 @@ body {
 }
 
 .header_links a {
-  font-family: "Alice", serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: -1px;
   font-style: normal;
   color: white;
@@ -209,8 +209,9 @@ body {
   display: flex;
   gap: 1vw;
   overflow-x: auto;
-  pointer-events: none;
-  /* Standardmäßig nicht scrollbar */
+  scroll-snap-type: x mandatory; /* Optional für schöneres Scrollen */
+  -webkit-overflow-scrolling: touch; /* Smooth Scroll auf iOS */
+  pointer-events: auto; /* Wichtig */
 }
 
 .gallery-wrapper:hover .gallery {
@@ -328,7 +329,7 @@ body {
   letter-spacing: -1vw;
   text-transform: uppercase;
   font-size: min(200px, 15vw);
-  color: #424242;
+  color: #666666;
 }
 
 .brands-grid {
@@ -472,13 +473,12 @@ body {
 }
 
 .text-unten {
-  font-family: "Alice", serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: -0.02vw;
   font-style: normal;
   font-size: max(16px, 1.3vw);
-  font-weight: 100;
   color: white;
-  text-align: justify;
+  text-align: left;
   padding-bottom: 2vw;
   padding-top: 2vw;
 }
@@ -499,7 +499,7 @@ body {
   /* Legt die Breite des Containers fest */
   margin: 0 auto;
   /* Zentriert das Container-Element horizontal */
-  padding-bottom: 5vw;
+  padding-bottom: 8vw;
 }
 
 .content-grid-item {
@@ -512,8 +512,7 @@ body {
 }
 
 .content-grid-item-zwei {
-  font-family: 'Alice', serif;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif;
   letter-spacing: -0.1vw;
   font-size: min(2.5vw, 30px);
   color: #818181;
