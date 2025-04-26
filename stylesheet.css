@@ -404,7 +404,8 @@ body {
 .aboutme_text_zwei{
   font-family: 'Fjalla One', sans-serif;
   color: white;
-  letter-spacing: -0.5vw;
+  letter-spacing: -0.10vw;
+  line-height: 0.93;
   font-size: max(8vw, 70px);
   text-transform: uppercase;
   position: absolute;
