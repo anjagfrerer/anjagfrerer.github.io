@@ -3,7 +3,7 @@ const gallery = document.getElementById('gallery');
 gallery.addEventListener('wheel', (e) => {
   if (gallery.parentElement.matches(':hover')) {
     e.preventDefault();
-    const scrollSpeed = 1.5; // Geschwindigkeit anpassen
+    const scrollSpeed = 0.5; // Geschwindigkeit anpassen
     gallery.scrollLeft += e.deltaY * scrollSpeed;
   }
 }, { passive: false });

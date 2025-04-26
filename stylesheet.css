@@ -162,7 +162,12 @@ body {
   min-height: 70px;
   width: 100%;
   object-fit: cover;
+}
 
+.box:hover {
+  transform: scale(1.02); /* leicht vergrößern */
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
 .box {
@@ -171,6 +176,7 @@ body {
   display: inline-block;
   /* optional */
   width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .overlay-text {
@@ -182,6 +188,7 @@ body {
   color: white;
   word-wrap: break-word;
   font-size: min(48px, 8vw);
+  pointer-events: none;
 }
 
 .overlay-text-zweites {
@@ -193,6 +200,7 @@ body {
   color: white;
   word-wrap: break-word;
   font-size: min(48px, 8vw);
+  pointer-events: none;
 }
 
 .no_background {
@@ -235,6 +243,13 @@ body {
   min-width: 180px;
   overflow: hidden;
   position: relative;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(0.98);
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
 .gallery-item img {
@@ -245,28 +260,6 @@ body {
   border-radius: 1.5vw;
 }
 
-.aboutme {
-  height: 500px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .scroller {
   width: 90vw;
   margin: 0px auto;
@@ -276,6 +269,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
+  
 }
 
 .scroller[data-animated="true"] {
@@ -338,10 +332,12 @@ body {
   gap: 0px;
   max-width: 100%;
   padding-bottom: 3vw;
+
 }
 
 .brands-item {
   max-width: 100%;
+  
 }
 
 .logos {
@@ -353,6 +349,7 @@ body {
   height: 12vw;
   /* oder eine fixe Höhe, z. B. 100px */
   gap: 2vw;
+  
 }
 
 .logo-item img {
@@ -360,6 +357,7 @@ body {
   display: block;
   max-width: 100px;
   margin: 0px auto;
+  
 }
 
 .brands-grid>.brands-item:first-child {
@@ -385,66 +383,61 @@ body {
 
 
 
-
-
-
-.bild-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /* Die Höhe passt sich automatisch an */
-  overflow-x: hidden;
-  /* Verhindert, dass das Bild den Wrapper überschreitet */
+.aboutme {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 Spalte */
+  grid-template-rows: repeat(3, auto);
 }
 
-.hintergrund-bild {
-  width: 100%;
-  height: auto;
-  display: block;
-  width: 70vw;
-  padding: 5vw;
-}
-
-.freigestellt-bild {
+.aboutme_text_eins{
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  letter-spacing: -0.5vw;
+  font-size: max(8vw, 48px);
+  text-transform: uppercase;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
+  left: 15%;
   z-index: 2;
-  /* liegt über dem Hintergrund */
-  pointer-events: none;
-  /* optional, falls du Klicks durchlassen willst */
-  width: 70vw;
-  padding: 5vw;
+  width: auto;
+}
+.aboutme_text_zwei{
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  letter-spacing: -0.5vw;
+  font-size: max(8vw, 48px);
+  text-transform: uppercase;
+  position: absolute;
+  right: 15%;
+  z-index: 2;
+  width: auto;
 }
 
-.hinter-text {
-  position: absolute;
-  top: 0%;
-  left: max(10vw, 20px);
-  font-size: max(8vw, 48px);
-  color: white;
-  z-index: 1;
-  /* Zwischen den beiden Bildern */
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 100;
-  letter-spacing: -0.5vw;
-  text-transform: uppercase;
+.image-wrapper {
+  position: relative;
 }
 
-.hinter-text-zwei {
+.aboutme .image-wrapper img {
   position: absolute;
-  top: 9vw;
-  left: 40vw;
-  font-size: max(8vw, 48px);
-  color: white;
-  z-index: 1;
-  /* Zwischen den beiden Bildern */
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 100;
-  letter-spacing: -0.5vw;
-  text-transform: uppercase;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* und so weiter */
+}
+
+.aboutme>.aboutme-item:nth-child(1) {
+  text-align: start;
+  min-height: max(8vw, 48px);
+}
+.aboutme>.aboutme-item:nth-child(2) {
+  text-align: end;
+  min-height: max(8vw, 48px);
+}
+.aboutme>.aboutme-item:nth-child(3) {
+  margin: 0px auto;
+  width: 80vw;
+  height: auto;
+  min-height: 60vw;
+  margin-top: -16vw;
 }
 
 .text-grid {
@@ -483,10 +476,6 @@ body {
   padding-top: 2vw;
 }
 
-.aboutme {
-  height: max(450px, 60vw);
-}
-
 .contact {
   display: grid;
   /* Aktiviert das Grid-Layout */
@@ -495,7 +484,7 @@ body {
   grid-template-rows: repeat(2, auto);
   /* Zwei Zeilen mit automatischer Höhe */
   text-align: center;
-  width: 80%;
+  width: 100%;
   /* Legt die Breite des Containers fest */
   margin: 0 auto;
   /* Zentriert das Container-Element horizontal */
