@@ -244,18 +244,19 @@ body {
   flex: 0 0 auto;
   aspect-ratio: 3 / 4;
   width: 25vw;
-  min-width: 150px;
+  min-width: 100px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 
 
 .gallery-item:hover {
   transform: scale(0.98);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
   cursor: pointer;
+  filter: opacity(80%);
 }
 
 .gallery-item img {
@@ -430,7 +431,8 @@ body {
   max-width: 1200px;
   left: 50%;
   transform: translateX(-50%);
-  /* und so weiter */
+  pointer-events: none; /* Verhindert Interaktionen wie Klicks */
+  user-select: none; /* Verhindert das Markieren */
 }
 
 .aboutme>.aboutme-item:nth-child(1) {
