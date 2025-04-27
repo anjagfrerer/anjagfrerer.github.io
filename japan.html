@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <div class="title">
+        <div style="display: flex; align-items: center; cursor: pointer;" onclick="history.back();">
+            <i class="material-icons" style="font-size:min(48px, 8vw); padding-right: 1vw;">arrow_back</i>
+            <span>Japan 2024</span>
+        </div>
+    </div>
+    <div class="date">
+        27.04.2025
+    </div>
+    <div class="title">
+        Information for this project
+    </div>
+    <div class="information">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </div>
+    <div class="title_gallery">
+        videos
+    </div>
+    <div class="gallery">
+        <video src="img/QualitySuperHighAmerikaInOne_compressed.mp4" data-type="video" muted></video>
+        <video src="img/QualitySuperHighAmerikaInOne_compressed.mp4" data-type="video" muted></video>
+    </div>
+    <div class="title_gallery">
+        photos
+    </div>
+    <div class="gallery">
+        <img src="img/japan/01.jpg" alt="Bild 1" data-type="image" />
+        <img src="img/japan/02.jpg" alt="Bild 2" data-type="image" />
+        <img src="img/japan/04.jpg" alt="Bild 2" data-type="image" />
+        <img src="img/japan/05.jpg" alt="Bild 2" data-type="image" />
+        <img src="img/japan/06.jpg" alt="Bild 2" data-type="image" />
+        <img src="img/japan/07.jpg" alt="Bild 2" data-type="image" />
+        <!-- Weitere Medien -->
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="prev">&#10094;</button>
+        <div id="lightbox-content">
+            <img id="lightbox-img" />
+            <video id="lightbox-video" controls></video>
+        </div>
+        <button class="next">&#10095;</button>
+        <span class="close" id="close">&times;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

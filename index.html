@@ -23,13 +23,13 @@
 <body>
     <div class="header">
         <div class="header_logo">
-            <a href="https://www.w3schools.com">leoschroeer</a> 
+            <a href="index.html">leoschroeer</a> 
         </div>
         <div class="header-center">
             <div class="header_links">
-                <a href="#myfavorites">my favorites</a>
-                <a href="https://www.w3schools.com">my work</a>
-                <a href="https://www.w3schools.com">about me & contact</a>
+                <a href="#myfavorites" onclick="window.scrollTo(0, document.getElementById('myfavorites').offsetTop - 40); return false;">my favorites</a>
+                <a href="#mywork" onclick="window.scrollTo(0, document.getElementById('mywork').offsetTop + 40); return false;">my work</a>
+                <a href="#aboutme_contact" onclick="window.scrollTo(0, document.getElementById('aboutme_contact').offsetTop - 40); return false;">about me & contact</a>
             </div>
         </div>
     </div>
@@ -47,9 +47,10 @@
                     <div class="linie"></div>
                 </div>
                 <div class="gridfavoriten">
-                    <div class="box"><img src="img/japan/01.jpg" alt="Italian Trulli">
-                        <div class="overlay-text">Japan 2025</div>
-                    </div>
+                    <a href="japan.html" class="box">
+                        <img src="img/japan/01.jpg" alt="Italian Trulli">
+                        <div class="overlay-text">Japan 2024</div>
+                      </a>
                     <div class="box"><img src="img/japan/02.jpg" alt="Italian Trulli">
                         <div class="overlay-text-zweites">Hongkong 2026</div>
                     </div>
