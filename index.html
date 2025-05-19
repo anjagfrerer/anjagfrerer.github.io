@@ -30,7 +30,7 @@
         <div class="header-center">
             <div class="header_links">
                 <a href="#myfavorites"
-                    onclick="window.scrollTo(0, document.getElementById('myfavorites').offsetTop - (3 * window.innerWidth / 100)); return false;">my
+                    onclick="window.scrollTo(0, document.getElementById('myfavorites').offsetTop - (2 * window.innerWidth / 100)); return false;">my
                     favorites</a>
                 <a href="#mywork"
                     onclick="window.scrollTo(0, document.getElementById('mywork').offsetTop + (2 * window.innerWidth / 100)); return false;">my
@@ -59,12 +59,14 @@
                         <img src="img/japan/01.jpg" alt="Italian Trulli">
                         <div class="overlay-text">Japan 2024</div>
                     </a>
-                    <div class="box"><img src="img/japan/02.jpg" alt="Italian Trulli">
-                        <div class="overlay-text-zweites">Hongkong 2026</div>
-                    </div>
-                    <div class="box"><img src="img/japan/03.jpg" alt="Italian Trulli">
-                        <div class="overlay-text">Shanghai 2027</div>
-                    </div>
+                    <a href="hongkong.html" class="box">
+                        <img src="img/japan/02.jpg" alt="Italian Trulli">
+                        <div class="overlay-text-zweites">Hongkong 2025</div>
+                    </a>
+                    <a href="shanghai.html" class="box">
+                        <img src="img/japan/03.jpg" alt="Italian Trulli">
+                        <div class="overlay-text">Shanghai 2026</div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -167,32 +169,29 @@
                     <div class="linie"></div>
                 </div>
                 <div class="aboutme">
-                    <div class="aboutme-item">
-                        <div class="aboutme_text_eins">
-                            <p>Leonardo</p>
-                        </div>
-                    </div>
-                    <div class="aboutme-item">
-                        <div class="aboutme_text_zwei">
-                            <p>Schroeer</p>
-                        </div>
-                    </div>
-                    <div class="aboutme-item">
-                        <div class="image-wrapper">
-                            <img src="img/leo_background.png" alt="Bild 4" style="z-index: 1;" draggable="false"
-                                oncontextmenu="return false;" />
-                            <img src="img/leo_image.png" alt="Bild 4" style="z-index: 3;" draggable="false"
-                                oncontextmenu="return false;" />
-                        </div>
+                    <div class="aboutme-stack">
+                        <img src="img/leoFoto.JPG" alt="Hintergrundbild" class="background-img">
+                        <div class="aboutme-text">LEONARDO SCHROEER</div>
+                        <img src="img/leoFotoFreigestellt.png" alt="Vordergrundbild" class="foreground-img">
                     </div>
                 </div>
+
+                <div class="vorstellungstext">
+                    Hi, ich bin Leo – leidenschaftlicher Fotograf mit einem Blick für besondere Momente. Ob Porträts,
+                    Landschaften oder Street Photography – meine Kamera ist mein ständiger Begleiter, um echte Emotionen
+                    und einzigartige Perspektiven festzuhalten. Für mich ist Fotografie mehr als nur ein Beruf – es ist
+                    meine Art, Geschichten zu erzählen.
+                </div>
+
                 <div class="contact">
                     <div class="content-grid-item">Telefon:</div>
                     <div class="content-grid-item">E-Mail:</div>
                     <div class="content-grid-item">Instagram:</div>
                     <div class="content-grid-item-zwei">+43 677 237483279</div>
-                    <div class="content-grid-item-zwei">leoschroeer@gmail.com</div>
-                    <div class="content-grid-item-zwei">@leoschroeer</div>
+                    <div class="content-grid-item-zwei"><a href="mailto:leoschroeer@gmail.com">leoschroeer@gmail.com</a>
+                    </div>
+                    <div class="content-grid-item-zwei"><a href="https://www.instagram.com/leoschroeer"
+                            target="_blank">@leoschroeer</a></div>
                 </div>
             </div>
         </section>

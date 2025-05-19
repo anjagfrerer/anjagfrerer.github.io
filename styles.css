@@ -112,12 +112,14 @@ body {
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 }
 
 .lightbox .next {
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 }
 
 @media (max-width: 1200px) {

@@ -64,7 +64,7 @@ body {
   /* sanfter Hover-Effekt */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,7 +81,7 @@ body {
     text-align: right;
   }
   .video-container {
-    margin-top: -130px !important;
+    margin-top: -136px !important;
   }
 }
 
@@ -104,7 +104,7 @@ body {
   /* viewport width */
   height: 100vh;
   overflow: hidden;
-  margin-top: -70px;
+  margin-top: -75px;
 }
 
 .video-container video {
@@ -362,7 +362,7 @@ body {
 .logo-item img {
   height: auto;
   display: block;
-  max-width: 100px;
+  max-width: 140px;
   margin: 0px auto;
   
 }
@@ -386,94 +386,6 @@ body {
   position: relative;
   z-index: 1;
   /* Niedrigere Werte für erste und letzte Zeile */
-}
-
-
-
-.aboutme {
-  display: grid;
-  grid-template-columns: 1fr; /* 1 Spalte */
-  grid-template-rows: repeat(3, auto);
-}
-
-.aboutme_text_eins{
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
-  letter-spacing: -0.5vw;
-  font-size: max(8vw, 70px);
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 2;
-  width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.aboutme_text_zwei{
-  font-family: 'Fjalla One', sans-serif;
-  color: white;
-  letter-spacing: -0.10vw;
-  line-height: 0.93;
-  font-size: max(8vw, 70px);
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 2;
-  width: auto;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.image-wrapper {
-  position: relative;
-}
-
-.aboutme .image-wrapper img {
-  position: absolute;
-  max-width: 1200px;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none; /* Verhindert Interaktionen wie Klicks */
-  user-select: none; /* Verhindert das Markieren */
-}
-
-.aboutme>.aboutme-item:nth-child(1) {
-  text-align: start;
-  min-height: max(8vw, 70px);
-}
-.aboutme>.aboutme-item:nth-child(2) {
-  text-align: end;
-  min-height: max(8vw, 70px);
-}
-.aboutme>.aboutme-item:nth-child(3) {
-  margin: 0px auto;
-  width: 80vw;
-  height: auto;
-  min-height: 60vw;
-  margin-top: -7vw;
-}
-
-.text-grid {
-  display: grid;
-  position: absolute;
-  z-index: 4;
-  grid-template-columns: 1fr;
-  grid-auto-rows: min-content;
-  width: 70vw;
-  top: 38vw;
-  left: 10vw;
-}
-
-.text-unten-dekorativ {
-  font-family: "Homemade Apple", cursive;
-  color: white;
-  font-size: max(18px, 2vw);
-  line-height: 1.2;
-}
-
-.text-unten-dekorativ-zweiter {
-  font-family: "Homemade Apple", cursive;
-  color: white;
-  font-size: max(18px, 2vw);
-  line-height: 1.2;
 }
 
 .text-unten {
@@ -516,4 +428,66 @@ body {
   letter-spacing: -0.1vw;
   font-size: min(2.5vw, 30px);
   color: #818181;
+}
+
+.content-grid-item-zwei a{
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.1vw;
+  font-size: min(2.5vw, 30px);
+  color: #818181;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+.aboutme-stack {
+  position: relative;
+  width: 90vw;
+  height: auto;
+}
+
+.background-img {
+  width: 100%;
+  display: block;
+}
+
+.foreground-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.aboutme-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size: min(10vw, 180px);
+  letter-spacing: -0.5vw;
+  text-transform: uppercase;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  pointer-events: none;
+  word-spacing: 5vw;
+}
+
+.vorstellungstext {
+  padding: 5vw;
+  padding-top: 2vw;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.05vw;
+  font-size: min(2vw, 24px);
+  color: white;
 }
